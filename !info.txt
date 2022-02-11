@@ -1,0 +1,11 @@
+Install
+npm i -g express-generator
+
+nodejs express szerver készítés:
+
+express --view=pug appNeve
+mappába belépni majd npm i
+
+NodeMon: figyeli hogy a mappában módosítottam-e vmit, ha igen, újraindítja a szervert
+npm i nodemon
+start: nodemon .\bin\www
