@@ -9,3 +9,13 @@ mappába belépni majd npm i
 NodeMon: figyeli hogy a mappában módosítottam-e vmit, ha igen, újraindítja a szervert
 npm i nodemon
 start: nodemon .\bin\www
+
+Bootsrap sablonok
+npm i bootswatch
+
+node_modules-en belül kikeresni a bootswach-t
+azon belül dist
+a mappák tartalmazzák a sablonokat, amit be lehet húzni
+angular.json-ba megadni az útvonalat (styles-ba)
+pl.: node_modules/bootswatch/dist/flatly/bootstrap.min.css
+
