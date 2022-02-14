@@ -1,1 +1,22 @@
-<p>users works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{ col.title }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- sorok létrehozása, adatok bevárása async-el -->
+        <tr *ngFor="let user of list$ | async">
+            <td *ngFor="let col of columns">
+                {{ user[col.key] }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- user-ek kiiratása -->
+{{ list$ | async | json }}
+
+<!-- <app-users></app-users> -->
