@@ -51,7 +51,7 @@ router.put('/:entity/:id', async(req, res, next) => {
 router.delete('/:entity/:id', async(req, res, next) => {
   //átadja az /:entity értékét a db-nek)
   const db = new DB(req.params.entity);
-  let deleted = await db.delete(id);
+  let deleted = await db.delete(req.params.id);
   // visszadja az id-t
   res.json(this.deleted);
 });

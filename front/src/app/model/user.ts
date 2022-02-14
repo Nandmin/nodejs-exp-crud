@@ -4,7 +4,7 @@ export class User {
     balance!: string;
     age!: number;
     eyeColor!: string;
-    name!: { first: string; last: string; };
+    name!: {first: string, last: string};
     company!: string;
     email!: string;
     phone!: string;

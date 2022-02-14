@@ -24,8 +24,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // illetve a node és angular kommunikáljon egymással
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  // engedélyezni kell a szervernek küldhető metódusokat is (enélkül pl. törölni se lehet)
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next();
-})
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

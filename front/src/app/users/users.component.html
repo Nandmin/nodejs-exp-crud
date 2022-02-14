@@ -9,14 +9,35 @@
     <tbody>
         <!-- sorok létrehozása, adatok bevárása async-el -->
         <tr *ngFor="let user of list$ | async">
-            <td *ngFor="let col of columns">
-                {{ user[col.key] }}
+            <!-- <td *ngFor="let col of columns">
+                <span *ngIf="col.key !== 'name'">
+                    {{ user[col.key] }} -->
+                <!-- </span> -->
+                <!-- <span *ngIf="col.key === 'name'"> -->
+                    <!-- {{ getNamePart(user.name, 'first') }} -->
+                    <!-- {{ getNamePart(user.name, 'last') }} -->
+                <!-- </span> -->
+            <!-- </td> -->
+            <td>{{user.id}}</td>
+            <td>{{user.isActive}}</td>
+            <td>{{user.age}}</td>
+            <td>
+                {{ getNamePart(user.name, 'first') }}
+                {{ getNamePart(user.name, 'last') }}
+            </td>
+            <td>{{user.company}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.address}}</td>
+            <td>
+                <button (click)="delete(user)" class="btn btn-danger">
+                    Delete
+                </button>
             </td>
         </tr>
     </tbody>
 </table>
 
 <!-- user-ek kiiratása -->
-{{ list$ | async | json }}
+<!-- {{ list$ | async | json }} -->
 
 <!-- <app-users></app-users> -->

@@ -1,4 +1,5 @@
-[{
+[
+    {
         "id": 2,
         "guid": "05ca6da4-32ab-41b8-8433-42139fd82c9c",
         "isActive": true,
@@ -1544,16 +1545,5 @@
         "email": "alison.gallagher@digigene.com",
         "phone": "+1 (875) 504-2978",
         "address": "223 Hausman Street, Savannah, Kansas, 5780"
-    },
-    {
-        "name": {
-            "first": "sdf",
-            "last": "sdfds"
-        },
-        "age": "33",
-        "company": "sdf",
-        "email": "sdfs",
-        "address": "sdfds",
-        "id": 96
     }
 ]
