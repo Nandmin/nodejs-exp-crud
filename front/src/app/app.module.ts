@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { IndexComponent } from './page/index/index.component';
 import { NavComponent } from './nav/nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavComponent } from './nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
